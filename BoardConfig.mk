@@ -25,6 +25,8 @@
 # against the traditional rules of inheritance).
 USE_CAMERA_STUB := true
 
+BOARD_BCM4330_LEGACY_FIRMWARE := true
+
 # inherit from common celox 
 -include device/samsung/celox-common/BoardConfigCommon.mk 
 
