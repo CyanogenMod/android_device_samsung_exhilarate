@@ -40,6 +40,9 @@ TARGET_OTA_ASSERT_DEVICE := SGH-I577,exhilarate
 TARGET_KERNEL_CONFIG        := cyanogenmod_exhilarate_defconfig
 TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
 
+# Assert minimum baseband version
+TARGET_BOARD_INFO_FILE ?= device/samsung/exhilarate/board-info.txt
+
 # cat /proc/emmc
 #dev:        size     erasesize name
 #mmcblk0p22: 00A00000 00000200 "recovery"
