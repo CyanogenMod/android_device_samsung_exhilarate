@@ -28,6 +28,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/samsung/exhilarate/firmware/bcm4330B1.hcd:system/etc/firmware/bcm4330B1.hcd
 
+# Media profile overried (remove 1080p)
+PRODUCT_COPY_FILES += \
+    device/samsung/exhilarate/configs/media_profiles.xml:system/etc/media_profiles.xml
+
 # Inherit from celox-common
 $(call inherit-product, device/samsung/celox-common/celox-common.mk) 
 
