@@ -14,17 +14,17 @@
 # limitations under the License.
 #
 
-## (2) Also get non-open-source specific aspects if available
+# Get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/exhilarate/exhilarate-vendor.mk)
 
-## overlays
+# Overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/exhilarate/overlay
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/samsung/exhilarate/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
-    
-# BT firmware
+    device/samsung/exhilarate/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc
+
+# Bluetooth
 PRODUCT_COPY_FILES += \
     device/samsung/exhilarate/firmware/bcm4330B1.hcd:system/etc/firmware/bcm4330B1.hcd
 
